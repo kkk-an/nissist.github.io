@@ -1,6 +1,11 @@
-# Nerfies
+# [Nissist: An Incident Mitigation Copilot based on Troubleshooting Guides](https://github.com/kkk-an/nissist.github.io)
+[Kaikai An](https://github.com/kkk-an), [Fangkai Yang](https://www.microsoft.com/en-us/research/people/fangkaiyang/), Junting Lu, Liqun Li, Zhixing Ren, Hao Huang, Lu Wang, Pu Zhao, Yu Kang, Hua Ding, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
 
-This is the repository that contains source code for the [Nissist website](https://nerfies.github.io).
+[![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://github.com/kkk-an/nissist.github.io)
+
+## 📢 News
+- [2024.7.5] Our paper is accepted by ECAI 2024.
+- [2024.2.27] We release the arXiv paper.
 
 If you find Nissist useful for your work please cite:
 ```
@@ -12,6 +17,3 @@ If you find Nissist useful for your work please cite:
     publisher={IOS Press}
 }
 ```
-
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
