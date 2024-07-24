@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Logic-Based Data Organization Paradigm for How-To Question Answering with Retrieval Augmented Generation.">
+  <meta name="keywords" content="Retrieval Augmented Generation, How-to Questions, Logic based">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nissist: An Incident Mitigation Copilot based on Troubleshooting Guides</title>
+  <link rel="icon" type="image/x-icon" href="./static/images/nisse.jpg">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <img src="./static/images/nisse.jpg" alt="Home"
+          style="height:60px; width:60px; vertical-align:middle; margin-right:5px;">
+          Nissist: An Incident Mitigation Copilot based on Troubleshooting Guides</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/kkk-an">Kaikai An</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/fangkaiyang/">Fangkai Yang </a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a>Junting Lu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a>Liqun Li</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a>Zhixing Ren</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a>Hao Huang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a>Lu Wang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a>Pu Zhao</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a>Yu Kang</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a>Hua Ding</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a>Qingwei Lin</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a>Saravan Rajmohan</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a>Dongmei Zhang</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a>Qi Zhang</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Peking University,</span>
+            <span class="author-block"><sup>2</sup>Microsoft</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <p><b>Accepted by ECAI 2024 Demo Track</b></p>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <!-- <span class="author-block"><sup>*</sup>Work done during the internship at Microsoft</span> -->
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2402.17531"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2402.17531"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=4Bg5aoYpJX4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Effective incident management is pivotal for the smooth operation of enterprises-level cloud services. In order to expedite incident mitigation, service teams compile troubleshooting knowledge into Troubleshooting Guides (TSGs) accessible to on-call engineers (OCEs). While automated pipelines are enabled to resolve the most frequent and easy incidents, there still exist complex incidents that require OCEs' intervention. However, TSGs are often unstructured and incomplete, which requires manual interpretation by OCEs, leading to on-call fatigue and decreased productivity, especially among new-hire OCEs. In this work, we propose Nissist which leverages TSGs and incident mitigation histories to provide proactive suggestions, reducing human intervention. Leveraging Large Language Models (LLM), Nissist extracts insights from unstructured TSGs and historical incident mitigation discussions, forming a comprehensive knowledge base. Its multi-agent system design enhances proficiency in precisely discerning user queries, retrieving relevant information, and delivering systematic plans consecutively. Through our user case and experiment, we demonstrate that Nissist significant reduce Time to Mitigate (TTM) in incident mitigation, alleviating operational burdens on OCEs and improving service reliability. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Methodolody</h2>
+        
+        <div class="content has-text-justified">
+          <div>
+            <div class="content has-text-justified">
+              <p>
+              <b><i>Nissist</i></b> constructs Knowledge Base offline with the help of <a href="https://arxiv.org/pdf/2406.13372">Thread</a>, by parsing knowledge  from unstructured TSGs and enhances it with knowledge from incident mitigation history not covered in TSGs. Subsequently, it iteratively processes OCE queries. Nissist is designed to mitigate incidents in a fully automated manner. However, due to the complex nature of incidents, not all actions suggested by Nissist can be automatically executed due to the lack of related execution functions in the execution engine. Thus, the non-executable actions are delegated to OCEs for manual execution, while those executale actions are passed to the execution engine, generating insights to trigger the next step of mitigation, automating the mitigation iteration.</p>
+              <img id="qasystem" src="./static/images/framework_crop.png" >
+              <p>Each module, powered by LLMs, serves as an agent responsible for specific tasks, including interpreting intents, selecting the most relevant knowledge (nodes from knowledge base), suggesting actions, etc. These modules concurrently communicate with each other to efficiently mitigate incidents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container is-max-desktop">
+    <!-- Experiments. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Case Study</h2>
+        <div class="content has-text-justified">
+          <p>
+            This figure illustrates a use case demonstrating industrial practices with Nissist. Given an OCE query <i>Service A to Service B connection is lost</i>, Nissist interprets the query, identifies the intent, and uses it to retrieve and select the most relevant node. The action planner then fills the given parameters, such as service information, into the code block, such as, a Kusto query with parameter placeholders in this use case. After the action is passed to the execution engine, the outcome indicates <i>the network monitor values are mostly zeros in the last 30 mins</i>. Nissist correlates this outcome with the ``Linker'' in the retrieved node, where this outcome indicates <i>a genuine problem and should check if other clusters are affected</i>. Then Nissist generates a new intent <i>How to determine if this issue is affecting other clusters</i> the next round of interaction automatically. This interaction continues until the incident is mitigated or requires human intervention. Additionally, Nissist digests all TSGs into knowledge base, making it possible to discover connections between nodes located in different TSGs. For example, <i>3b</i> demonstrates another execution result which requires knowledge from a different TSG. Previously, it requires OCEs to take great efforts searching for the knowledge in other TSGs, which often did not list such knowledge in their titles. </p> 
+            <img id="qasystem" src="./static/images/case_crop.png" >
+        </div>
+      </div>
+    </div>
+    <!--/ Experiments. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@incollection{an2024nissist,
+    title={Nissist: An incident mitigation copilot based on troubleshooting guides},
+    author={An, Kaikai and Yang, Fangkai and Li, Liqun and Ren, Zhixing and Huang, Hao and Wang, Lu and Zhao, Pu and Kang, Yu and Ding, Hua and Lin, Qingwei and others},
+    booktitle={ECAI 2024},
+    year={2024},
+    publisher={IOS Press}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page is for research demonstration purposes only.
+          </p>
+          <p>
+            The source code of this webpage is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and <a href="https://github.com/showlab/videogui">VideoGUI</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
